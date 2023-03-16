@@ -1,2 +1,72 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Travlr Getaways Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header}}
+			<div id="contents">
+				<div id="adbox">
+					<img src="images/sea-sound.jpg" alt="Img">
+					<h1>Enjoy the Summer with Us!</h1>
+					<p>
+						This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.
+					</p>
+				</div>
+				<div id="main">
+					<div class="box">
+						<div>
+							<div>
+								<h3>Latest Blog</h3>
+								<ul>
+									<li>
+										<h4><a href="news.html">{{main.1.title}}</a></h4>
+										<span>{{main.1.date}}</span>
+										<p>
+											{{main.1.description}}
+										</p>
+									</li>
+									<li>
+										<h4><a href="news.html">{{main.2.title}}</a></h4>
+										<span>{{main.2.date}}</span>
+										<p>
+											{{main.2.description}}
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="testimonials" class="box">
+						<div>
+							<div>
+								<h3>{{main.3.title}}</h3>
+								<p>
+									{{main.3.description}} <span>- <a href="index.html">{{main.3.author}}</a></span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sidebar">
+					<div class="section">
+						<a href="rooms.html"><img src="images/rooms.png" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="dives.html"><img src="images/dive-site.png" alt="Img"></a>
+					</div>
+					<div class="section">
+						<a href="foods.html"><img src="images/food.png" alt="Img"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{> footer}}
+	</div>
+</body>
+</html>
